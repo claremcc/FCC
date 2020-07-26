@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <header>
+    <!-- <link rel="stylesheet" type="text/css" href="..\resources\css\surveyForm.css"> -->
+  </header>
+  <body>
+    <h1 id="title"> Survey Form </h1>
+    <p id="description">This is what this survey is all about </p>
+    <form  id="survey-form">
+      <label id="name-label">name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter name" required><br>
+
+      <label id="email-label">email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter email" required><br>
+
+      <label id="number-label">number:</label><br>
+      <input type="number" id="number" name="number" placeholder="Enter number" min="10" max="99"><br>
+
+      <label id="favourite food">Choose a favourite food:</label><br>
+      <select name="Favourite Food" id="dropdown">
+        <option value="pizza">Pizza</option>
+        <option value="lettuce">Lettuce</option>
+        <option value="mrice">Rice</option>
+      </select><br>
+
+      <label id="cooking method"> How many of the following do you do?: </label><br>
+      <input type="checkbox" id="cook" name="methodofCooking" value="cook">
+      <label for="cook">cook</label><br>
+      <input type="checkbox" id="order in" name="methodofCooking" value="order in">
+      <label for="order in">order in</label><br>
+      <input type="checkbox" id="eat out" name="methodofCooking" value="eat out">
+      <label for="eat out">eat out</label><br>
+
+      <label id="eat out question"> Do you eat out a lot?: </label><br>
+      <input type="radio" id="once" name="eat out frequency" value="once">
+      <label for="once"> I usually eat out once per week</label><br>
+      <input type="radio" id="more than once" name="eat out frequency" value="more than once">
+      <label for="more than once"> I usually eat out many times per week</label><br>
+      <input type="radio" id="mostly never" name="eat out frequency" value="mostly never">
+      <label for="mostly never"> I usually dont eat out at all</label><br>
+
+      <label id="name-label">Additional comments (optional):</label><br>
+      <textarea id="additional comments" name="additional comments" rows="2" cols="50">
+      </textarea> <br>
+
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+  <footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+  </footer>
+</html>
