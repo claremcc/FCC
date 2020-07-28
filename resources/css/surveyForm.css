@@ -1,4 +1,36 @@
 
 html *{
-  background: #f2e5d9
+
+}
+
+#title{
+  font-family: "Lucida Console";
+}
+
+#description{
+  font-family: "Lucida Console";
+}
+
+#main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label, input {
+    display: block;
+}
+
+label {
+    margin-bottom: 20px;
+}
+
+/* .options{
+  display: none;
+} */
+
+#survey-form{
+  /*background-color: blue;*/
+  font-family: "Lucida Console";
+  width: 50%;
 }
