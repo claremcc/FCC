@@ -1,14 +1,17 @@
 header {
   grid-area: header;
   background-color: #FFFFFF;
-  padding: 30px;
+  margin: 0px;
+  padding: 0px;
   text-align: center;
+
 }
 
 #main {
   grid-area: main;
   padding: 60px;
 }
+
 footer {
   grid-area: footer;
   background-color: #000000;
@@ -16,19 +19,6 @@ footer {
   min-height: 30px;
 
 }
-
-/* @media screen and (max-width: 992px) {
-  #mainGrid {
-    background-color: blue;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #mainGrid {
-    background-color: olive;
-    font-size: 10px;
-  }
-} */
 
 .grid-container {
   display: grid;
@@ -42,32 +32,18 @@ footer {
 }
 
 #nav-bar{
-  overflow: hidden;
   background-color: #FFFFFF;
 
 }
 
 #nav-bar a {
-  float: right;
+  font-family: Arial, Helvetica, sans-serif;
   display: inline-block;
   color: black;
-  text-align: right;
-  padding: 14px;
+  margin: 0px 20px 0px 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
-
-/* nav, ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav, li {
-  display: block;
-  float: right;
-  text-align: left;
-} */
 
 .sticky {
   position: fixed;
@@ -96,18 +72,5 @@ h2{
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
+  border-radius: 5px;
 }
-
-/* .flex-container {
-  display: flex;
-  background-color: DodgerBlue;
-  justify-content: center;
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-} */
