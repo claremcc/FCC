@@ -1,0 +1,43 @@
+
+#navbar {
+  grid-area: navbar;
+  display:block;
+  grid-column: 1 / 2;
+  /*background: #cce0ff;*/
+  padding-top: 30px;
+  /*padding: 15px;*/
+  height: 100%;
+  position: fixed;
+}
+
+.nav-link{
+  text-decoration: none;
+}
+
+#navbar{
+  font-family: sans-serif;
+
+}
+
+li{
+  padding-top: 5px;
+  padding-bottom: 10px;
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+#main-doc {
+  grid-area: main-doc;
+  display:block;
+  grid-column: 2 / 5;
+  padding: 5px;
+  background:#cce0ff;
+}
+
+.main-section{
+  padding: 20px;
+  margin 10px;
+  background: #f0f6ff;
+  font-family: 'Sans';
+
+}
