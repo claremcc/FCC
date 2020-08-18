@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="..\resources\css\surveyForm2.css">
+  </head>
+  <body>
+    <div id="main">
+      <form  id="survey-form">
+        <h1 id="title"> Food Survey Form </h1>
+        <p id="description"> Please tell us about your food habits </p>
+        <div>
+          <label id="name-label">
+            <p>Name:</p>
+            <input type="text" id="name" class="textInput" name="name" placeholder="Enter name" required>
+          </label>
+        </div>
+        <div>
+          <label id="email-label" >
+            <p>Email:</p>
+            <input type="email" id="email" class="textInput" name="email" placeholder="Enter email" required>
+          </label>
+        </div>
+        <div>
+          <label id="number-label" >
+            <p>Number:</p>
+            <input type="number" id="number" class="textInput" name="number" placeholder="Enter number" min="10" max="99">
+          </label>
+        </div>
+
+        <label id="favourite-food">
+          <p>Choose a favourite food:</p>
+          <div>
+            <select name="Favourite Food" id="dropdown" class="textInput">
+              <option value="pizza">Pizza</option>
+              <option value="lettuce">Lettuce</option>
+              <option value="rice">Rice</option>
+            </select>
+          </div>
+        </label>
+
+        <div>
+          <label id="cooking method" >
+            <p>How many of the following do you do?:</p>
+            <div>
+              <input type="checkbox" id="cook" name="methodofCooking" value="cook">
+              <label for="cook">cook</label>
+            </div>
+            <div>
+              <input type="checkbox" id="order in" name="methodofCooking" value="order in">
+              <label for="order in">order in</label>
+            </div>
+            <div>
+              <input type="checkbox" id="eat out" name="methodofCooking" value="eat out">
+              <label for="eat out">eat out</label>
+            </div>
+          </label>
+        </div>
+
+        <label id="eat out question">
+          <p>Do you eat out a lot?:</p>
+          <div>
+            <input type="radio" id="once" name="eat out frequency" value="once">
+            <label for="once"> I usually eat out once per week</label>
+          </div>
+          <div>
+            <input type="radio" id="more than once" name="eat out frequency" value="more than once">
+            <label for="more than once"> I usually eat out many times per week</label>
+          </div>
+          <div>
+            <input type="radio" id="mostly never" name="eat out frequency" value="mostly never">
+            <label for="mostly never"> I usually dont eat out at all</label>
+          <div>
+        </label>
+
+        <label id="name-label" ><p>Additional comments (optional):</p>
+          <textarea id="additional-comments" name="additional comments"  rows="2" cols="50">
+          </textarea>
+        </label>
+
+        <div>
+          <input type="submit" id="submit" value="Submit" >
+        </div>
+
+      </form>
+    </div>
+  </body>
+  <footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+  </footer>
+</html>
