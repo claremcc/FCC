@@ -1,13 +1,94 @@
 <html>
 <!DOCTYPE html>
   <head>
-    <link rel="stylesheet" type="text/css" href="../resources/css/portfolioWebpage.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/portfolioWebpage2.css">
+    <!-- <script type="text/javascript" src="../resources/js/portfolioPage2.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    function myFunction() {
+      var x = document.getElementById("navbar");
+      if (x.className === "navigation") {
+        x.className += " responsive";
+      } else {
+        x.className = "navigation";
+      }
+    }
+    </script>
+    <style>
+      /* @media screen and (max-width: 600px) {
+        .navigation a:not(:first-child), .dropdown .dropbtn {
+          display: none;
+        }
+        .navigation a.icon {
+          float: right;
+          display: block;
+        }
+      } */
+
+      @media screen and (max-width: 600px) {
+        navbar[role="full-horizontal"] {
+          ul > li {
+          width: 100%;
+    }
+  }
+      /* }
+
+      {
+            .navigation.responsive {position: relative;}
+            .navigation.responsive .icon {
+              position: absolute;
+              right: 0;
+              top: 0;
+            }
+            .navigation.responsive a {
+              float: none;
+              display: block;
+              text-align: left;
+            }
+          }  */
+    </style>
   </head>
-  <header>
-    This is the portfolio Webpage
-  </header>
+
   <body>
+    <div class="grid-container">
+
+    <div id="navbar" class="grid-item navigation" role="full-horizontal">
+    <header>
+        <ul>
+          test Nav-bar
+          <li><a href="#more-info">About</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#more-info">Contact</a></li>
+        </ul>
+    </header>
+    </div>
+
+      <div id="welcome-section" class="grid-item" >
+        <h1>Welcome - This is the portfolio Webpage</h1>
+
+      </div>
+      <div id="projects" class="grid-item">
+        <h2>Test - Projects div</h2>
+        <a href="https://github.com/claremcc/FCC/blob/master/tributePage/index.html">
+          <img class="project-tile" src="../resources/images/greenFood.jpg"></a>
+        <img class="project-tile" src="../resources/images/greenFood.jpg">
+        <img class="project-tile" src="../resources/images/greenFood.jpg">
+        <img class="project-tile" src="../resources/images/greenFood.jpg">
+        <img class="project-tile" src="../resources/images/greenFood.jpg">
+        <img class="project-tile" src="../resources/images/greenFood.jpg">
+      </div>
+      <div id="more-info" class="grid-item">
+        <h2>More info div</h2>
+        <a id="profile-link" href="https://www.freecodecamp.org/fcc1d953212-bfc2-4abc-8681-f841486f3c50" target="_blank">Link to FCC</a>
+      </div>
+      <footer class="grid-item">
+        <p>Test - Footer </p>
+      </footer>
+
+
+    </div>
   </body>
+
   <footer>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
     </script>
