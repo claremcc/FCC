@@ -3,7 +3,6 @@
   <head>
     <link rel="stylesheet" type="text/css" href="../resources/css/portfolioWebpage2.css">
     <!-- <script type="text/javascript" src="../resources/js/portfolioPage2.js"></script> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script>
     // window.onscroll = function() {myFunction()}; //adding this caused a passing test to fail AUG-26
@@ -29,11 +28,12 @@
     }
   }
     </style>
+    <meta name="viewport" content="width=device-width" initial-scale=1>
 
   </head>
 
   <body>
-    <div id="content" class="grid-container">
+    <div id="body-content" class="grid-container">
 
     <nav id="navbar" class="grid-item navigation sticky" role="full-horizontal" >
     <header>
@@ -46,7 +46,7 @@
     </header>
   </nav>
 
-      <div id="welcome-section" class="grid-item" >
+      <div id="welcome-section" class="grid-item, welcome-section" >
         <h1>Welcome - This is the portfolio Webpage</h1>
 
       </div>
@@ -67,7 +67,6 @@
       <footer class="grid-item">
         <p>Test - Footer </p>
       </footer>
-
 
     </div>
   </body>
