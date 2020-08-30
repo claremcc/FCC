@@ -4,64 +4,47 @@
     <link rel="stylesheet" type="text/css" href="../resources/css/portfolioWebpage2.css">
     <!-- <script type="text/javascript" src="../resources/js/portfolioPage2.js"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script>
+    // window.onscroll = function() {myFunction()}; //adding this caused a passing test to fail AUG-26
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function myFunction() {
-      var x = document.getElementById("navbar");
-      if (x.className === "navigation") {
-        x.className += " responsive";
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
       } else {
-        x.className = "navigation";
+        navbar.classList.remove("sticky");
       }
     }
     </script>
-    <style>
-      /* @media screen and (max-width: 600px) {
-        .navigation a:not(:first-child), .dropdown .dropbtn {
-          display: none;
-        }
-        .navigation a.icon {
-          float: right;
-          display: block;
-        }
-      } */
 
-      @media screen and (max-width: 600px) {
-        navbar[role="full-horizontal"] {
+    <style>
+      @media screen and (max-width: 44em) {
+        nav[role="full-horizontal"] {
           ul > li {
           width: 100%;
     }
   }
-      /* }
-
-      {
-            .navigation.responsive {position: relative;}
-            .navigation.responsive .icon {
-              position: absolute;
-              right: 0;
-              top: 0;
-            }
-            .navigation.responsive a {
-              float: none;
-              display: block;
-              text-align: left;
-            }
-          }  */
     </style>
+
   </head>
 
   <body>
-    <div class="grid-container">
+    <div id="content" class="grid-container">
 
-    <div id="navbar" class="grid-item navigation" role="full-horizontal">
+    <nav id="navbar" class="grid-item navigation sticky" role="full-horizontal" >
     <header>
         <ul>
-          test Nav-bar
-          <li><a href="#more-info">About</a></li>
+          <!-- test Nav-bar -->
+          <li><a href="#welcome-section">About</a></li>
           <li><a href="#projects">Work</a></li>
           <li><a href="#more-info">Contact</a></li>
         </ul>
     </header>
-    </div>
+  </nav>
 
       <div id="welcome-section" class="grid-item" >
         <h1>Welcome - This is the portfolio Webpage</h1>
